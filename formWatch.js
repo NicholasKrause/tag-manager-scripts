@@ -13,14 +13,14 @@ var oFormWatch = (function( _d, _q){
       eV.preventDefault();
 console.log( eV.target );
       setTimeout( function(){
-console.log( document.getElementById("input_1_2").value );
-console.log( document.getElementById("input_1_4").value );
-console.log( document.getElementById("input_1_5").value );
-console.log( document.getElementById("input_1_13").value );
+console.log( _d.getElementById("input_1_2").value );
+console.log( _d.getElementById("input_1_4").value );
+console.log( _d.getElementById("input_1_5").value );
+console.log( _d.getElementById("input_1_13").value );
        
-if( (document.getElementById("input_1_2").value != "") && (document.getElementById("input_1_4").value != "") ){
-if( (document.getElementById("input_1_5").value != "") && (document.getElementById("input_1_13").value != "") ){
-         if(typeof gtag != "undefined") gtag("event", "form", { "event_category": "click", "event_label": "form submission", "value": "form" });
+if( (_d.getElementById("input_1_2").value != "") && (_d.getElementById("input_1_4").value != "") ){
+if( (_d.getElementById("input_1_5").value != "") && (_d.getElementById("input_1_13").value != "") ){
+         if(typeof gtag != "undefined") gtag("event", "form", { "event_category": "click", "event_label": "form submission", "value": _d.getElementById("input_1_2").value });
          eV.target.submit();
 }
 }
