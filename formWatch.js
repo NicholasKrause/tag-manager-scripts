@@ -1,5 +1,5 @@
 <script>
- "use strict";  //  Bind to form submit UX artisan ⚡ illustrator ⚡ front-end engineer
+ "use strict";  //  Bind to form submit 
 var oFormWatch = (function( _d, _q){
   var aF = [].slice.call( _d.querySelectorAll( _q ) );
   return {
@@ -20,7 +20,7 @@ console.log( _d.getElementById("input_1_13").value );
        
 if( (_d.getElementById("input_1_2").value != "") && (_d.getElementById("input_1_4").value != "") ){
 if( (_d.getElementById("input_1_5").value != "") && (_d.getElementById("input_1_13").value != "") ){
-         if(typeof gtag != "undefined") gtag("event", "form", { "event_category": "click", "event_label": "form submission", "value": _d.getElementById("input_1_2").value });
+         if(typeof gtag != "undefined") gtag("event", "form", { "event_category": "click", "event_label": _d.getElementById("input_1_2").value, "value": "gform" });
          eV.target.submit();
 }
 }
