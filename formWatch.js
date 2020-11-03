@@ -5,7 +5,7 @@ var oFormWatch = (function( _d, _q){
     "init": function(){
       aF.filter( function( eF ){
         eF.dataset.formWatch = "true";
-        eF.addEventListener("submit", oFortWatch.event( eF ));
+        eF.addEventListener("submit", oFormWatch.event( eF ));
       });
     },
     "tick": function(){
