@@ -1,4 +1,4 @@
-<scrip>
+<script>
  "use strict";  //  Bind to form submit UX artisan ⚡ illustrator ⚡ front-end engineer
 var oFormWatch = (function( _d, _q){
   var aF = [].slice.call( _d.querySelectorAll( _q ) );
