@@ -1,4 +1,5 @@
-"use strict";  //  Bind to form submit UX artisan ⚡ illustrator ⚡ front-end engineer
+<scrip>
+ "use strict";  //  Bind to form submit UX artisan ⚡ illustrator ⚡ front-end engineer
 var oFormWatch = (function( _d, _q){
   var aF = [].slice.call( _d.querySelectorAll( _q ) );
   return {
@@ -19,3 +20,4 @@ console.log( eV.target );
   };
 })( document, "FORM" );
 oFormWatch.init();
+</script>
