@@ -13,8 +13,11 @@ var oFormWatch = (function( _d, _q){
     },
     "event": function( eV ){
       eV.preventDefault();
-console.log("event | " + eV );
+console.log( eV );
+      setTimeout( function(){
       //  if(typeof gtag != "undefined") gtag("event", "interactive", { "event_category": "click", "event_label": "cart", "value": "c2a" });
+        eV.target.submit();
+      }, 8000);
     }
   };
 })( document, "FORM" );
