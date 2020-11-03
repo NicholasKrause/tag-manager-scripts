@@ -8,16 +8,13 @@ var oFormWatch = (function( _d, _q){
         eF.addEventListener("submit", oFormWatch.event );
       });
     },
-    "tick": function(){
-      setTimeout(function(){ oFormWatch.tick(); }, 1000);
-    },
     "event": function( eV ){
       eV.preventDefault();
-console.log( eV );
+console.log( eV.target );
       setTimeout( function(){
       //  if(typeof gtag != "undefined") gtag("event", "interactive", { "event_category": "click", "event_label": "cart", "value": "c2a" });
         eV.target.submit();
-      }, 8000);
+      }, 800);
     }
   };
 })( document, "FORM" );
