@@ -24,7 +24,7 @@ if( (_d.getElementById("input_1_5").value != "") && (_d.getElementById("input_1_
          eV.target.submit();
 }
 }
-      }, 800);
+      }, 1200);
     }
   };
 })( document, "FORM" );
