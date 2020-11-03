@@ -13,8 +13,10 @@ var oFormWatch = (function( _d, _q){
       eV.preventDefault();
 console.log( eV.target );
       setTimeout( function(){
-        if(typeof gtag != "undefined") gtag("event", "form", { "event_category": "click", "event_label": "form submission", "value": "form" });
-        eV.target.submit();
+       if( _d.getElementById("input_1_2").value && _d.getElementById("input_1_4").value ){
+         if(typeof gtag != "undefined") gtag("event", "form", { "event_category": "click", "event_label": "form submission", "value": "form" });
+         eV.target.submit();
+       }
       }, 800);
     }
   };
