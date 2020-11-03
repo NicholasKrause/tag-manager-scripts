@@ -20,7 +20,7 @@ console.log( _d.getElementById("input_1_13").value );
        
 if( (_d.getElementById("input_1_2").value != "") && (_d.getElementById("input_1_4").value != "") ){
 if( (_d.getElementById("input_1_5").value != "") && (_d.getElementById("input_1_13").value != "") ){
-         if(typeof gtag != "undefined") gtag("event", "form", { "event_category": "click", "event_label": _d.getElementById("input_1_2").value, "value": "gform" });
+         if(typeof gtag != "undefined") gtag("event", "form", { "event_category": "click", "event_label": "form submission", "value": "custom script" });
          eV.target.submit();
 }
 }
